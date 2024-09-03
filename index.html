@@ -13,13 +13,13 @@
 
 <body class="bg-[#1E1E1E] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
     <main>
-        <section id="home-screen" class="flex flex-col justify-center items-center min-h-screen gap-8">
+        <section id="home-screen" class="flex flex-col justify-center items-center min-h-screen gap-8 container mx-auto">
             <h1 class="text-5xl font-extrabold text-white">Alphabet Clash </h1>
             <p class="text-white">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
             <button onclick="play()" id="play-now-button" class="btn">Play Now</button>
 
         </section>
-        <section id="play-ground" class="flex flex-col justify-center  items-center gap-8 pt-8 hidden">
+        <section id="play-ground" class="flex flex-col justify-center  items-center gap-8 pt-8 hidden container mx-auto">
             <!-- ArtBoard -->
 
             <div
@@ -66,20 +66,20 @@
             <div class="flex justify-between w-3/4">
                 <button class=" btn bg-purple-700 text-white border-0">Life
                     <img src="images/Vector.svg" alt="">
-                    <span>1</span>
+                    <span id="current-life">5</span>
                 </button>
                 <button class=" btn bg-purple-700 text-white border-0">score
                     <img src="images/monetization_on.svg" alt="">
-                    <span>1</span>
+                    <span id="current-score">1</span>
                 </button>
             </div>
 
         </section>
-        <section class="score hidden">
+        <section id="result" class="hidden container mx-auto">
             <div class="flex flex-col justify-center items-center min-h-screen bg-[#FFFFFF33]">
                 <div class="border-2 border-white p-8 space-y-3 rounded-lg text-center">
-                    <h1 class="text-3xl text-white font-extrabold">Score: <span>14</span></h1>
-                    <button class="btn">Play Again</button>
+                    <h1 class="text-3xl text-white font-extrabold">Score: <span id="total-score-board">14</span></h1>
+                    <button onclick="play()" id="play-again-btn" class="btn">Play Again</button>
                     <p class="text-white">Practice makes you perfect</p>
                 </div>
             </div>
